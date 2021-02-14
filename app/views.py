@@ -6,6 +6,7 @@ This file creates your application.
 """
 
 from app import app
+import datetime
 from flask import render_template, request, redirect, url_for, flash
 
 
@@ -22,12 +23,16 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="Ashley Perkins")
 
 
 ###
 # The functions below should be applicable to all Flask apps.
 ###
+@app.route('/profile')
+def profile():
+    join_date = format_date_joined(2021,2,13)
+    return render_template('profile.html', join_date=join_date)
 
 @app.route('/<file_name>.txt')
 def send_text_file(file_name):
@@ -53,6 +58,9 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
-
+def format_date_joined(year, month, day):
+    date_joined = datetime.datetime(year, month, day)
+    return date_joined.strftime('%B, %Y')
+    
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port="8080")

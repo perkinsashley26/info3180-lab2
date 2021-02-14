@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <div class="container">
+        <div class="outline">
+            <div class="header">
+                <div class="rounded"><img src="{{url_for('static',filename='img/lab2pic.jpg')}}"  alt="Image of myself"></div>
+            <h1 class="name">Ashley Perkins</h1>
+            <p class="username">@perkieperkins</p>
+            <p class="title">Kingston,Jamaica</p>
+            <p class="date">Joined {{join_date}}</p> 
+            </div>
+            <div class="body">
+                <p class="profileinfo">
+                My name is Ashley Perkins and I am a second year student in the Faculty of Science and Technology.
+                I am currently pursuing a degree in Computer Science with hopes of helping to improve technology,
+                as well as using my creative and innovative skills to work at Apple. In my spare time, I enjoy
+                connecting with my creative side by creating graphic designs as well doing videography and photography.</p>
+                <ul class= "stats">
+                   <li class="accdetails">
+                       <p class="numbers">25</p>
+                       <p class="info">Posts</p>
+                   </li>
+                   <li class="accdetails">
+                       <p class="numbers">1000</p>
+                       <p class="info">Following</p>
+                    </li>
+                    <li class="accdetails">
+                        <p class="numbers">3000</p>
+                        <p class="info">Followers</p>
+                    </li>
+                </ul>
+            </div>
+            <p><button class="btn">Follow</button></p>
+        </div>
+{% endblock %}
+    </div>
+            
+        
+
+       
+
+            

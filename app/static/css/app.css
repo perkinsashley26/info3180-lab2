@@ -1,3 +1,103 @@
+*{
+    margin:0;
+    font-size:18px;
+    font-family: - -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+}
 body {
     padding-top: 5rem;
 }
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.username{
+    font-size: 0.8em;
+    color: #fff;
+}
+.title{
+    color: #fff;
+}
+.date{
+    color: #fff;
+}
+.profileinfo {
+  color: #3c3c3c;
+  width: 80%;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+.stats {
+    align-items: center;
+    display: flex;
+}
+.numbers{
+    font-weight:bold;
+}
+.accdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    margin: 15px;
+    margin-top: -20px;
+}
+div img {
+    width:20vh;
+    height: 20vh;
+    border-radius:1000%;
+    margin-top: 55px;
+    /*width: 100px;*/
+    
+}
+.header{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    background: #f722f7;
+    color: #fff;
+}
+
+.outline{
+    width: 45%;
+    border: 2px solid #706e6e;
+    border-radius: 5px;
+}
+.body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-left: 170px;
+    border: none;
+    color:#fff;
+    background-color: rgb(58, 238, 23);
+    padding: 5px 50px;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
